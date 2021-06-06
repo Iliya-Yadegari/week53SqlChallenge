@@ -15,8 +15,3 @@ def write_fun(name_e,place_e,age_e):
     values = (name_e,place_e,age_e)
     mycursor.execute(sqlCommand,values)
     mydb.commit()
-
-    mycursor.execute('SELECT age FROM results')
-
-    result = mycursor.fetchall()
-    print(result)
